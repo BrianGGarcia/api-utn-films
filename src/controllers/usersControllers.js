@@ -4,8 +4,9 @@ import bcryptjs from "bcryptjs"
 import jwt from "jsonwebtoken"
 import { successResponse, errorResponse } from "../utils/index.js"
 import { registerSchema, loginSchema } from "../validators/userValidators.js"
+import dotenv from "dotenv"
 
-process.loadEnvFile()
+dotenv.config()
 
 // ==============================
 // OBTENER USUARIOS
